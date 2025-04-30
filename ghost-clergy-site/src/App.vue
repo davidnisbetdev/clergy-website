@@ -1,47 +1,52 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
-import MainHeader from '@/components/Header.vue'
-import MainFooter from '@/components/Footer.vue'
-import RouterLink from 'Vue Router'
+import Header from '@./components/Header.vue' 
+// import MainFooter from '@/components/Footer.vue'
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
   <div class="app-container">
-    <header class="site-header">
-      <div class="site-title">
-        <RouterLink to="/">The Clergy</RouterLink>
-      </div>
-    </header>
-  </div>
+
+    <Header />
+
+  <main class="main-content">
+    <RouterView />
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; {{ new Date().getFullYear() }} Ministry Archives. All dogma reserved.</p>
+  </footer>
+
+</div>
+
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+/* main content area */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #888; 
 }
+
+/* Remove or adapt the existing media query if not needed */
+/* @media (min-width: 1024px) { ... } */
+
 </style>
