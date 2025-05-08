@@ -1,5 +1,12 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import { ref } from 'vue'
+
+const isMobileNavOpen = ref(false)
+
+function toggleMobileNav() {
+  isMobileNavOpen = !isMobileNavOpen.value
+}
 </script>
 <template>
 <header class="site-header">
@@ -7,8 +14,13 @@ import { RouterLink } from 'vue-router'
       <RouterLink to="/">The Clergy</RouterLink>
     </div>
     <nav class="main-nav">
-      <RouterLink to= "/">Home</RouterLink>
-      <RouterLink to="/about">About Us</RouterLink>
+      <button class="hamburger-menu" @click="toggleMobileNav" aria-label="Toggle Navigation" :aria-expanded="isMobileNavOpen.toString()">
+        <span>☰</span>
+      </button>
+      <ul class="nav-links" :class="{ 'is-open': isMobileNavOpen }">
+        <li><RouterLink to= "/" @click="isMobileNavOpen && toggleMobileNav()">Home</RouterLink></li>
+        <li><RouterLink to="/about" @click="isMobileNavOpen && toggleMobileNav()">About Us</RouterLink></li>
+      </ul>
     </nav>
 </header>
 </template>
