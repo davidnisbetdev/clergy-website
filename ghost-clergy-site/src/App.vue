@@ -33,6 +33,12 @@ import { RouterLink, RouterView } from 'vue-router'
 .main-content {
   flex-grow: 1;
   padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Footer */
@@ -43,8 +49,5 @@ import { RouterLink, RouterView } from 'vue-router'
   background-color: #1a1a1a;
   color: #888; 
 }
-
-/* Remove or adapt the existing media query if not needed */
-/* @media (min-width: 1024px) { ... } */
 
 </style>

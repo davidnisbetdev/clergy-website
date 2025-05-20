@@ -42,18 +42,35 @@ function toggleMobileNav() {
   color: inherit;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* navigation links */
-.main-nav a {
-  margin-left: 1rem;
-  color: #ccc;
-  text-decoration: none;
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.main-nav a:hover,
-.main-nav a.router-link-exact-active {
-  color: white;
+
+.nav-links li {
+  margin: 1.5rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.router-link-exact-active {
+  color: #fff;
   font-weight: bold;
 }
 
+.hamburger-menu {
+  display: none;
+}
 </style>
