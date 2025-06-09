@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: none;
+    font-family: arial, sans-serif;
+    background-color: #031602;
+    color: #F8F8FF;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #F8F8FF;
+}
+
+ul {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
