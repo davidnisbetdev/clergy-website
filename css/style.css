@@ -11,7 +11,7 @@ html {
 body {
     margin: none;
     font-family: arial, sans-serif;
-    background-color: #031602;
+    background-color: #0d0907;
     color: #F8F8FF;
     line-height: 1.6;
 }
@@ -34,10 +34,13 @@ ul {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     flex-grow: 1;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
-    padding: 1rem;
+    padding: 2em;
 }
 
 .site-header {
@@ -50,4 +53,44 @@ main {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+}
+
+section, .splash{
+    width: 90vw;
+    height: 90vh;
+    border: 1px dotted white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    opacity: 0.25;
+    box-shadow: 10px 10px 10px 10px #1a1a1a;
+}
+
+.content {
+    width: 90vw;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.content > section{
+    max-height: 98%;
+    max-width: 33.33%;
+    margin: 1em 2em;
+}
+
+.splash > button {
+    height: 5em;
+    width: 7.5em;
+}
+
+.splash > h1, span {
+    max-width: 75%;
+    justify-content: center;
 }
