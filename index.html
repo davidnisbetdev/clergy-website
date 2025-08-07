@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
-        <head>
-         <meta charset="utf-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <title>The Ministry - (Un)Official Ministry Archives</title>
-         <meta name="description" content="">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="./css/style.css">
-        </head>
-        <body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Ministry - (Un)Official Ministry Archives</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
         <div id="global-content-style">
-        <header class="site-header">
-            <a href="index.html" class="site-title-link site-brand">The Ministry Archives</a>
-            <nav class="main-nav-block">
-                <ul>
-                    <li>
-                        <a href="/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="/team.html">The Clergy</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="splash">
-                <h1>Sanctified Records for The Congregation</h1>
-                <span>(un)Official records, visual testaments, and unholy chapters from The Clergy.</span>
-                <button id="scrollFromSplash" onClick="">
-                    Enter the Archives
-                </button>
-            </section>
-            <section class="content">
-                <section class="one">
-                    <h2>Our Mission</h2>
+            <header class="site-header">
+                <a href="index.html" class="site-title-link site-brand">The Ministry Archives</a>
+                <nav class="main-nav-block">
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/team.html">The Clergy</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section id="splash" class="content-bubble">
+                    <h1>Sanctified Records for The Congregation</h1>
+                    <span>(un)Official records, visual testaments, and unholy chapters from The Clergy.</span>
+                    <a href="#content-section" class="button">Enter the Archives</a>
                 </section>
-                <section class="two">
-                    <h2>Public Relations</h2>
+
+                <section id="content-section" class="content-bubble">
+                    <div class="features-grid">
+                        <article class="feature">
+                            <h2>Our Mission</h2>
+                            <p>An introduction to the purpose of these archives.</p>
+                        </article>
+                        <article class="feature">
+                            <h2>Public Relations</h2>
+                            <p>Details on the Ministry's public-facing musical ritual group.</p>
+                        </article>
+                        <article class="feature">
+                            <h2>The Papal Lineage</h2>
+                            <p>Explore the history of the esteemed leaders of the Clergy.</p>
+                        </article>
+                    </div>
                 </section>
-                <section class="three">
-                    <h2>The Papal Lineage</h2>
-                </section>
-            </section>
-        </main>
-    </div>
+            </main>
+        </div>
         
-            <script src="./js/script.js" async defer></script>
-        </body>
+        <script src="./js/script.js" async defer></script>
+    </body>
 </html>
