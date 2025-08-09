@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    margin: none;
+    margin: 0;
 }
 
 *,
@@ -64,13 +64,12 @@ main {
 }
 
 .content-bubble {
-    border: 1px dotted white;
+    width: 80vw;
     border-radius: 10px;
     background-color: #1a1a1a;
     opacity: 0.25;
     box-shadow: 0 5px 15px #1a1a1a;
     padding: 1em;
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,11 +77,51 @@ main {
 }
 
 #splash {
-    height: 88vh;
-    background-image: url(../images/ui/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 88vh;
+  background-image: url(../images/ui/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 90vw;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 2em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#splash::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        #0d0907 90%
+    )
+
+}
+
+.splash-content {
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 2em;
 }
 
 .features-grid {
@@ -103,4 +142,10 @@ main {
 .button {
     height: 5rem;
     width: 7.5rem;
+    border: 1px solid #555;
+    border-radius: 6px;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    line-height: 20px;
 }
