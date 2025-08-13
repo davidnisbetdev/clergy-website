@@ -167,3 +167,16 @@ main {
 .main-about {
     color: white;
 }
+
+.leadership-grid {
+    grid-template-columns: repeat(4, 1fr);
+    display: flex; 
+    padding: 1em;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.staff-card {
+    flex-basis: calc(25% - 1.5em);
+    flex-shrink: 0;
+}
