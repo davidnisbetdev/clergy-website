@@ -1,6 +1,6 @@
 export const staffArr = [
   {
-    img: "./images/staff",
+    img: "./images/staff/frater.jpg",
     staffName: "Frater Imperator",
     quickBio:
       "Frater Imperator is the head of the Clergy and oversees the day-to-day running of the Ministry.",

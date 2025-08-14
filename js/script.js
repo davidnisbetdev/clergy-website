@@ -6,12 +6,16 @@ let staffOutput = ''
 const staffElement = document.getElementById('staff-output')
 
 staffArr.forEach(person =>{
-    staffOutput += `<article class='feature staff-card'>
-                    <img src='${person.img}'/>
-                    <span>${person.staffName}</span>
+    staffOutput += `<section class='feature staff-card'>
+                    <div class="staff-image">
+                        <img src='${person.img}'/>
+                        <span class="staff-name">${person.staffName}</span>
+                    </div>
+                    <section class="staff-info">
                     <p>${person.quickBio}</p>
                     <ul class='responsibilities-list'><ul>
-                    </article>`
+                    </section>
+                    </section>`;
 })
 
 staffElement.innerHTML = staffOutput
