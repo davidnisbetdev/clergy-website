@@ -7,21 +7,21 @@ export const staffArr = [
     keyResponsibilities: [],
   },
   {
-    img: "./images/staff",
+    img: "./images/staff/marika.png",
     staffName: "Marika Psaltarian",
     quickBio:
-      "Marika is Frater's paternal aunt. She raised Frater, know to her as 'Cardi', from infancy and eventually installed him to the role of Cardinal.",
+      "Marika is Frater's paternal aunt. She raised Frater, known to her as 'Cardi', from infancy and eventually installed him to the role of Cardinal.",
     keyResponsibilities: [],
   },
   {
-    img: "./images/staff",
+    img: "./images/staff/mrpsalt.png",
     staffName: "Mr. Psaltarian",
     quickBio:
       "Mr Psaltarian bio here",
     keyResponsibilities: [],
   },
   {
-    img: "./images/staff",
+    img: "./images/staff/judith.png",
     staffName: "Judith",
     quickBio:
       "Judith Bio Here",
