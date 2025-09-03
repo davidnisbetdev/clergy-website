@@ -163,8 +163,7 @@ main {
     padding: 1em 0;
     overflow-x: auto;
 }
-
-.staff-card {
+.card {
     height: 500px;
     width: 400px;
     flex-shrink: 0;
@@ -176,7 +175,7 @@ main {
     position: relative;
 }
 
-.staff-card::after {
+.card::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -189,6 +188,16 @@ main {
     );
     z-index: 1;
     border-radius: 9px;
+}
+
+.staff-card {
+    height: 500px;
+    width: 400px;
+}
+
+.album-card {
+    height: 450px;
+    width: 290px;
 }
 
 .staff-image {
@@ -277,5 +286,29 @@ main {
 .album-info h2 {
     text-align: left;
     width: 100%;
-    margin-top: 0;
+    margin-top: 0.5em;
+}
+
+/* --- Scrollbar Styles --- */
+
+.leadership-grid::-webkit-scrollbar,
+.features-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.leadership-grid::-webkit-scrollbar-track,
+.features-grid::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.leadership-grid::-webkit-scrollbar-thumb,
+.features-grid::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.leadership-grid::-webkit-scrollbar-thumb:hover,
+.features-grid::-webkit-scrollbar-thumb:hover {
+  background: #7c2ce5; /* Your theme's gold color */
 }

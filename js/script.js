@@ -5,12 +5,12 @@ function fillStaff(staffArr) {
 let staffOutput = ''
 const staffElement = document.getElementById('staff-output')
 
-if (!staffElement || !papaElement){
+if (!staffElement){
     return;
 }
 
 staffArr.forEach(person =>{
-    staffOutput += `<section class='feature staff-card'>
+    staffOutput += `<section class='feature card staff-card'>
                     <div class="staff-image">
                         <img src='${person.img}'/>
                         <span class="staff-name">${person.staffName}</span>
@@ -30,12 +30,12 @@ function fillPapa(papaArr) {
     let papaOutput = ''
     const papaElement = document.getElementById('papa-output')
 
-    if (!papaElement || !staffElement) {
+    if (!papaElement) {
       return;
     }
 
     refactoredArr.forEach(person => {
-        papaOutput += `<section class='feature staff-card'>
+        papaOutput += `<section class='feature card staff-card'>
                     <div class="staff-image">
                         <img src='${person.img}'/>
                         <span class="staff-name">${person.papaName}</span>
@@ -70,10 +70,10 @@ function fillAlbums(albums){
             if(reqElement){
                 let html = "";
                 albumList.forEach(album => {
-                    html += `<section class='feature staff-card'>
+                    html += `<section class='feature card album-card'>
                         <div class="staff-image">
                             <img src='${album.img}'/>
-                            <span class="staff-name">${album.name}</span>
+                            <span class="staff-name">${album.name.toUpperCase()}</span>
                             <aside class="staff-aka">${album.releaseDate}</aside>
                         </div>
                     <section class="staff-info">
